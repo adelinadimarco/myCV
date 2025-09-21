@@ -1,0 +1,176 @@
+* {
+  margin: 300;
+  padding: 300;
+  font-size: 100%;
+}
+
+body {
+  
+}
+
+/* MENU!!!*/
+.menu {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.menu-toggle {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  background: #f5f5f5;
+}
+
+.menu-content {
+  display: none;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* MOSTRAR MENU */
+.menu:hover .menu-content {
+  display: flex;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: #333;
+  margin: 0.3rem 0;
+}
+
+.menu-content a:hover {
+  opacity: 70%
+}
+
+/* TITULOS */
+h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 20px;
+  padding-top: 1rem;
+    text-transform: uppercase;
+
+}
+
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+    padding-top: 0.5rem;
+
+}
+
+.titulo {
+  font-size: 30px;
+  text-align: center;
+  font-weight: <weight>;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+.subti {
+  text-align: center;
+}
+
+/* FULL CONTENIDO */
+
+.cuerpo {
+  max-width: 700px;
+  /* controls the "small page" width */
+  margin: 0 auto;
+  /* centres the content */
+  padding: 2rem;
+  /* inside padding */
+  border-radius: 8px;
+  /* optional, softer look */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  /* subtle shadow */
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+.page ul {
+  list-style: none;
+  padding-left: 1.2rem;
+}
+
+.date {
+  color: #343434;
+  font-size: smaller;
+}
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.profile-pic {
+  float: left;
+  max-width: 250px;
+  width: 200px;
+  height: auto;
+  margin: 0 1.5rem 1rem 0;
+  border-radius: 20px;
+}
+
+
+
+.about-text {
+  max-width: 650px;
+}
+
+.exp li::before {
+  content: "•"
+}
+
+.page li::before {
+  color: #555;
+  margin-right: 0.5rem;
+}
+
+.marginTop {
+  margin-top: 30rem;
+}
+
+/* LINKS DE NAVEGACIÓN */
+
+hr.solid {
+  border-top: 0.5px solid #bbb;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover {
+  opacity: 70%
+}
+
+
+footer {
+  font-family: "Work Sans", sans-serif;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
