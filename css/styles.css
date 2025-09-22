@@ -1,11 +1,7 @@
 * {
   margin: 300;
-  padding: 300;
+  padding: 0;
   font-size: 100%;
-}
-
-body {
-  
 }
 
 /* MENU!!!*/
@@ -14,7 +10,7 @@ body {
   top: 1rem;
   right: 1rem;
   background: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   font-family: sans-serif;
 }
@@ -30,7 +26,6 @@ body {
   display: none;
   flex-direction: column;
   padding: 0.5rem 1rem;
-
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -55,66 +50,32 @@ body {
 }
 
 /* TITULOS */
-h2 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: <weight>;
-  font-style: normal;
-  font-size: 20px;
-  padding-top: 1rem;
-    text-transform: uppercase;
-
-}
-
-h3 {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-    padding-top: 0.5rem;
-
-}
 
 .titulo {
-  font-size: 30px;
-  text-align: center;
-  font-weight: <weight>;
-  font-style: normal;
-  letter-spacing: 0.03em;
-}
-
-.subti {
-  text-align: center;
-}
-
-/* FULL CONTENIDO */
-
-.cuerpo {
-  max-width: 700px;
-  /* controls the "small page" width */
-  margin: 0 auto;
-  /* centres the content */
-  padding: 2rem;
-  /* inside padding */
-  border-radius: 8px;
-  /* optional, softer look */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  /* subtle shadow */
-  font-family: "Work Sans", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: bold;
   font-style: normal;
-  line-height: 1.6;
-  letter-spacing: 0.01em;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.4em;
+text-transform: uppercase;
 }
 
-.page ul {
-  list-style: none;
-  padding-left: 1.2rem;
+.ref {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+      font-weight: bold;
+  font-size: 1.3rem;
 }
 
-.date {
-  color: #343434;
-  font-size: smaller;
+.subtitle {
+font-weight: bold;  
+text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: left;
+  letter-spacing: 0.1em;
 }
 
 .about {
@@ -132,31 +93,72 @@ h3 {
   border-radius: 20px;
 }
 
-
-
 .about-text {
   max-width: 650px;
 }
 
+/* FULL CONTENIDO */
+
+.cuerpo {
+  max-width: 700px;
+  margin: 0 auto; /* all centered*/
+  padding: 1rem;
+  /* internal padding */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+.experience ul {
+  margin-top: 1.5rem;
+    list-style: none;
+  padding-left: 1.2rem;
+} 
+
 .exp li::before {
-  content: "•"
+  content: "•";
 }
 
-.page li::before {
-  color: #555;
-  margin-right: 0.5rem;
+.date {
+  color: #343434;
+  font-size: smaller;
 }
 
-.marginTop {
-  margin-top: 30rem;
+.job-container {
+  display: flex;
+  align-items: flex-start;
 }
 
-/* LINKS DE NAVEGACIÓN */
+.pos {
+  float: left;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
 
+.work {
+  float: right;
+  font-style: italic;
+}
+
+.cursos {
+  padding-left: 1rem;
+}
+
+.skills {
+  padding-left: 1rem;
+}
+
+/*lineas*/
 hr.solid {
   border-top: 0.5px solid #bbb;
 }
 
+/* links */
 a {
   color: #000000;
   text-decoration: none;
@@ -167,10 +169,11 @@ a:hover {
   opacity: 70%
 }
 
-
+/* footer */
 footer {
+  align-items: center;
   font-family: "Work Sans", sans-serif;
   color: #555;
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
 }
