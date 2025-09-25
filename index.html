@@ -23,16 +23,19 @@
   <body>
     <header>
       <nav class="menu">
-        <div class="menu-toggle">🧭 Navigation</div>
-
+        <div class="menu-toggle" id="menuToggle">🧭 Navigation</div>
+        
         <div class="menu-content">
           <a href="#profile">💁‍♀️ Profile</a>
           <a href="#projects">👩‍💻 Projects</a>
           <a href="#experience">💼 Experience</a>
-          <a href="#adminOp">• Administrative Operations Analyst</a>
-          <a href="#adminAssis">• Administrative Assistant</a>
-          <a href="#adminLegal">• Administrative Legal Assistant </a>
-          <a href="#receptionist">• Receptionist</a>
+          <div class="sub-menu">   
+           <a href="#adminOp">Administrative Operations Analyst</a>
+          <a href="#adminAssis">Administrative Assistant</a>
+          <a href="#adminLegal">Administrative Legal Assistant </a>
+          <a href="#receptionist">Executive Receptionist</a> 
+          </div>
+      
           <a href="#education">🎓 Education</a>
           <a href="#courses">👩‍🎓 Courses & Certifications</a>
           <a href="#skills">🔧 Habilities & IT Skillset</a>
@@ -46,7 +49,7 @@
         <!-- Inicio -->
         <h1 class="titulo" id="profile">Adelina Di Marco</h1>
 
-        <h2 class="ref">Marketing Student & Digital Designer</h2>
+        <h2 class="dedication">Marketing Student & Digital Designer</h2>
       </div>
 
       <!-- profile... -->
@@ -98,25 +101,20 @@
 </div>
 
       <!-- experiencias -->
-      <div class="experience">
-        <h2 id="experience" class="subtitle">💼 Experience</h2>
-        <hr class="solid" />
+  <div class="experiences">
+    <h2 id="experience" class="subtitle">💼 Experience</h2>
+       <hr class="solid" />
 
-        <div class="job-container">
-
-            <div class="pos" id="adminOp">Administrative Operations Analyst</div>
-            
-            <div class="work">Evangelista Law Firm</div>
-
-          
-        </div>
+    <div class="job-desc">
+            <div class="pos" id="adminOp">Administrative Operations Analyst</div>        
+            <div class="job">Evangelista Law Firm</div>
+     </div>
 
         <p class="date">(Estudio Jurídico Evangelista)</p>
         <hr class="solid" />
-
         <p class="date">May 2023 - Present | Buenos Aires, Argentina</p>
 
-        <ul class="exp">
+        <ul class="">
           <li>
             Designed communication and data-organization systems by creating
             database structures to streamline workflow and automate tasks.
@@ -142,16 +140,12 @@
           <li>Oversee every output to make sure the work run smoothly.</li>
         </ul>
 
-        <div class="job-container">
-                      
-          <div class="pos" id="adminAssis">Administrative Assistant</div> 
-          
-          <div class="work">Gargiulo Residential Building Management</div> 
-                  
+        <div class="job-desc">                    
+          <div class="pos" id="adminAssis">Administrative Assistant</div>     
+          <div class="job">Gargiulo Residential Building Management</div>                
         </div>
         
         <hr class="solid"/>
-
         <p class="date">Jan 2020 – Feb 2023 | Buenos Aires, Argentina</p>
 
         <ul class="exp">
@@ -177,13 +171,12 @@
           </li>
         </ul>
 
-        <div class="job-container">
+        <div class="job-desc">
           <div id="adminLegal" class="pos"> Administrative Legal Assistant </div>
-          <div class="work">Caradzoglu-Melli & Associates Law Firm</div>
+          <div class="job">Caradzoglu-Melli & Associates Law Firm</div>
         </div>
         
         <hr class="solid" />
-
         <p class="date">Nov 2018 - Dec 2019 | Buenos Aires, Argentina</p>
 
         <ul class="exp">
@@ -197,11 +190,12 @@
           <li> Oversaw calendar coordination and appointment scheduling.</li>
         </ul>
 
-        <h3 id="receptionist">
-          Executive Receptionist | Yulitta M.D. Private Clinic
-        </h3>
-        <hr class="solid" />
+      <div class="job-desc">
+          <div id="receptionist" class="pos"> Executive Receptionist </div>
+          <div class="job">Yulitta M.D. Private Clinic</div>
+      </div>
 
+        <hr class="solid" />
         <p class="date">Oct 2017 – Sep 2018 | Buenos Aires, Argentina</p>
 
         <ul class="exp">
@@ -267,7 +261,7 @@
         </div>
 
         <div>
-          <h2 id="skill" class="subtitle">🔧 Habilities & IT Skillset</h2>
+          <h2 id="skills" class="subtitle">🔧 Habilities & IT Skillset</h2>
           <hr class="solid" />
         </div>
 
@@ -341,7 +335,8 @@
         </p>
 
         <p>📍 Buenos Aires, Argentina</p>
-        <button type="button" class="button"><a href="https://mailto:aderdimarco@gmail.com/">⬇️ Download my CV</a></button>
+
+        <button type="button" class="btn"><a href="https://mailto:aderdimarco@gmail.com/">⬇️ Download my CV</a></button>
 
       </div>
 
@@ -349,8 +344,16 @@
 
     <footer>
       <p>
-        © 2025 - Made with 🩵 by Adelina Di Marco. Thank you for stepping by!
+        © 2025 - Made with 🩵 by Adelina Di Marco. <div class="bye">Thank you for stepping by!</div>
       </p>
     </footer>
+
+    <script>
+   document.getElementById('menuToggle').onclick = function() {
+    var menu = document.querySelector('.menu-content');
+    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+  };
+</script>
+
   </body>
 </html>
